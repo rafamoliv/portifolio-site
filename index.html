@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" />
+
     <title>Rafael Oliveira</title>
   </head>
   <body>
@@ -22,5 +25,26 @@
         </ul>
       </div>
     </div>
+
+    <section class="sec">
+      <header>
+        <div class="toggle"></div>
+        <a href="#" class="btn">Hire Me</a>
+      </header>
+    </section>
+
+    <script type="text/javascript">
+      let menuToggle = document.querySelector(".toggle");
+      let navigation = document.querySelector(".navigation");
+      let sec = document.querySelector(".sec");
+
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+        sec.classList.toggle("active");
+      };
+
+      console.log(menuToggle);
+    </script>
   </body>
 </html>
